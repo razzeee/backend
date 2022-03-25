@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     redis_db: int = 0
     database_url: str = "postgresql+psycopg2://postgres:postgres@db:5432"
     sentry_dsn: Optional[str] = None
+    environment: str = "staging"
     appstream_repos: Optional[str] = None
     datadir: str = os.path.join(ROOT_DIR, "data")
     stats_baseurl = "https://flathub.org/stats"
